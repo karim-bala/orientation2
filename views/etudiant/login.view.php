@@ -58,10 +58,18 @@
 
       <div>
         <div class="flex items-center justify-between">
-          <label for="password" class="block text-sm font-bold leading-6 text-gray-900">Votre matricule</label>
+          <label for="matricule" class="block text-sm font-bold leading-6 text-gray-900">Votre matricule</label>
         </div>
         <div class="mt-2">
-          <input id="password" name="matricule" type="password"  required  placeholder="  exp : 232331233001" class="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <input id="matricule" name="matricule" type="text"  required  placeholder="  exp : 232331233001" class="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center justify-between">
+          <label for="password" class="block text-sm font-bold leading-6 text-gray-900">Votre mot de passe (date de naissance) </label>
+        </div>
+        <div class="mt-2">
+          <input id="password" name="password" type="password"  required  placeholder="  exp : 1999-12-31" class="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
       </div>
 

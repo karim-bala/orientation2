@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
     
     if (empty($choix)) {
         
-        $db->query("INSERT into choix(nom,prenom,matricule,choix1,choix2,choix3,choix4,sauvgard) VALUES(:nom,:prenom,:matricule,:choix1,:choix2,:choix3,:choix4,:sauvgard)",[
+        $db->query("INSERT into choix(nom,prenom,matricule,choix1,choix2,choix3,choix4,sauvgard,decision) VALUES(:nom,:prenom,:matricule,:choix1,:choix2,:choix3,:choix4,:sauvgard,:decision)",[
             "nom"=>$_SESSION["nom_etudaint"],
             "prenom"=>$_SESSION["prenom_etudaint"],
             "matricule"=>$_SESSION["mat_etudaint"],
@@ -67,7 +67,8 @@ if (isset($_POST['submit'])) {
             "choix2"=>$select2,
             "choix3"=>$select3,
             "choix4"=>$select4,
-            "sauvgard"=> 1
+            "sauvgard"=> 1,
+            "decision"=> $_SESSION["Decision"]
         ]);
      
         
