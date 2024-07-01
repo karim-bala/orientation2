@@ -19,8 +19,6 @@ if(isset($_POST['btn-submit'])){
     elseif ($admin[0]['password'] != $password):
         $error = "le mot de pass est incorrect!";
     else:
-        
-      
          $_SESSION['email'] = $admin[0]['email'];
        
            //rederiction vers la page d'accuele
